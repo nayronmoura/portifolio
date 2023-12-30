@@ -12,6 +12,7 @@ class AppWidget extends StatelessWidget {
         light: ThemeData.light(useMaterial3: true),
         dark: ThemeData.dark(useMaterial3: true),
         builder: (theme, darkTheme) => MaterialApp.router(
+              title: "Nayron Moura",
               theme: theme,
               darkTheme: darkTheme,
               debugShowCheckedModeBanner: false,
