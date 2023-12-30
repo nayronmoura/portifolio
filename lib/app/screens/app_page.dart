@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:lottie/lottie.dart';
-import 'package:portifolio/app/util/parse_asset.dart';
+
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
 
 class AppPage extends StatefulWidget {
@@ -48,7 +48,7 @@ class _AppPageState extends State<AppPage> {
           left: 0,
           bottom: 0,
           child: Lottie.asset(
-            parseAsset("lotties/hand.json"),
+            "lotties/hand.json",
             height: 300,
             width: 300,
             fit: BoxFit.cover,

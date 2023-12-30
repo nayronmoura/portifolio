@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/app/util/parse_asset.dart';
+
 import 'package:portifolio/app/widgets/language_card/language_card.dart';
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
 
@@ -32,10 +32,10 @@ class MySkills extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 )),
           ),
-          SizedBox(height: 10),
-          Wrap(children: [
+          const SizedBox(height: 10),
+          const Wrap(children: [
             LanguageCard(
-              imageUrl: parseAsset('svg/flutter.svg'),
+              imageUrl: 'svg/flutter.svg',
               title: 'Flutter',
               description:
                   'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
