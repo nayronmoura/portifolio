@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:portifolio/app/screens/home/just_me/components/about_me.dart';
 import 'package:portifolio/app/screens/home/just_me/components/header.dart';
 import 'package:portifolio/app/screens/home/just_me/components/my_skills.dart';
-import 'package:portifolio/app/util/constants.dart';
-import 'package:portifolio/app/util/parse_asset.dart';
-import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
 
 class JustMePage extends StatefulWidget {
   const JustMePage({super.key});
