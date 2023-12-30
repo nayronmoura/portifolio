@@ -13,9 +13,6 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Debug
-      run: ls -R
-
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
@@ -32,20 +29,16 @@ jobs:
       with:
         name: web-release
         path: build/web
-
-  deploy:
-    name: Deploy Web Build
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Download Web Release
-      uses: actions/download-artifact@v3
-      with:
-        name: web-release
-      
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+    
+    - name: Deploy
+      run: |
+          cd build/web
+          git init
+          git config --global user.email nayronmoura@gmail.com
+          git config --global user.name nayronmoura
+          git status
+          git remote add origin https://${{secrets.token}}@github.com/nayronmoura/nayronmoura.github.io.git
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "update"
+          git push origin gh-pages -f
