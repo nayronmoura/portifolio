@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portifolio/util/constants.dart';
-import 'package:portifolio/widgets/sidebar/sidebar.dart';
-import 'package:routefly/routefly.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:portifolio/app/util/constants.dart';
+import 'package:portifolio/app/widgets/sidebar/sidebar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,6 +11,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    Modular.to.navigate('./justme');
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {

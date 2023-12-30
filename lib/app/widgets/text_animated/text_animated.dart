@@ -6,12 +6,16 @@ class TextAnimated extends StatefulWidget {
   final String text;
   final TextStyle? style;
   final Duration? duration;
+  final TextScaler? textScaler;
+  final TextAlign? textAlign;
   const TextAnimated(
       {super.key,
       this.onEnd,
       required this.text,
       this.isLoop = false,
       this.duration,
+      this.textScaler,
+      this.textAlign,
       this.style});
 
   @override
@@ -29,7 +33,7 @@ class _TextAnimatedState extends State<TextAnimated>
 
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
+      duration: widget.duration ?? const Duration(seconds: 2),
     );
     _animation = Tween<double>(
       begin: 0,
@@ -40,7 +44,7 @@ class _TextAnimatedState extends State<TextAnimated>
 
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Future.delayed(widget.duration ?? const Duration(seconds: 2), () {
+        Future.delayed(const Duration(seconds: 2), () {
           if (widget.isLoop) {
             _controller.reset();
             _controller.forward();
@@ -60,7 +64,8 @@ class _TextAnimatedState extends State<TextAnimated>
           return Text(
             widget.text
                 .substring(0, (_animation.value * widget.text.length).round()),
-            textAlign: TextAlign.center,
+            textAlign: widget.textAlign ?? TextAlign.center,
+            textScaler: widget.textScaler,
             style: widget.style ??
                 const TextStyle(
                   fontSize: 30,

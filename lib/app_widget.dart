@@ -1,7 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:portifolio/routes.dart';
-import 'package:routefly/routefly.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -16,9 +15,7 @@ class AppWidget extends StatelessWidget {
               theme: theme,
               darkTheme: darkTheme,
               debugShowCheckedModeBanner: false,
-              routerConfig: Routefly.routerConfig(
-                routes: routes, // GENERATED
-              ),
+              routerConfig: Modular.routerConfig,
             ));
   }
 }

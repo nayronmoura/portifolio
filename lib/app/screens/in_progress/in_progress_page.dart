@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:portifolio/widgets/text_animated/text_animated.dart';
+import 'package:portifolio/app/util/parse_asset.dart';
+import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
 
 class InProgressPage extends StatelessWidget {
   const InProgressPage({super.key});
@@ -27,7 +28,7 @@ class InProgressPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Lottie.asset(
-                  'assets/lotties/in_progress.json',
+                  parseAsset('lotties/in_progress.json'),
                   fit: BoxFit.cover,
                   width: 300,
                   height: 300,

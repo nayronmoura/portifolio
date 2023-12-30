@@ -15,9 +15,12 @@ dependencies:
     sdk: flutter
   
   cupertino_icons: ^1.0.2
-  routefly: ^1.0.5
+
   lottie: ^2.7.0
   adaptive_theme: ^3.4.1
+  flutter_modular: ^6.3.2
+  flutter_svg: ^2.0.9
+  flutter_svg_provider: ^1.0.7
 
 dev_dependencies:
   flutter_test:
