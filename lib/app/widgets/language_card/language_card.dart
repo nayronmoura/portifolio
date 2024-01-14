@@ -18,10 +18,9 @@ class LanguageCard extends StatefulWidget {
 class _LanguageCardState extends State<LanguageCard> {
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Card(
       child: InkWell(
-        onHover: (bool){},
+        onHover: (bool) {},
         child: Container(
           width: 300,
           height: 300,
