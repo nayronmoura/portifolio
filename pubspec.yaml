@@ -21,7 +21,7 @@ dependencies:
   flutter_modular: ^6.3.2
   flutter_svg: ^2.0.9
   flutter_svg_provider: ^1.0.7
-  intl: any
+  intl: ^0.18.0
   intl_utils: ^2.8.7
 
 

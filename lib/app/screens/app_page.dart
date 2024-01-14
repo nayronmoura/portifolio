@@ -3,6 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:lottie/lottie.dart';
 
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
+import 'package:portifolio/core/generated/l10n.dart';
 
 class AppPage extends StatefulWidget {
   const AppPage({super.key});
@@ -12,8 +13,6 @@ class AppPage extends StatefulWidget {
 }
 
 class _AppPageState extends State<AppPage> {
-  final String text = '';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +37,7 @@ class _AppPageState extends State<AppPage> {
                   onEnd: () {
                     Modular.to.navigate('/workinprogress');
                   },
-                  text: text,
+                  text: S.of(context).welcome,
                 ),
               ),
             ),
