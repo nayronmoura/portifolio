@@ -39,6 +39,12 @@ class MySkills extends StatelessWidget {
               title: 'Flutter',
               description:
                   'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
+            ),
+            LanguageCard(
+              imageUrl: 'svg/java.svg',
+              title: 'Java',
+              description:
+                  'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
             )
           ])
         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
+import 'package:portifolio/core/generated/l10n.dart';
 
 class InProgressPage extends StatelessWidget {
   const InProgressPage({super.key});
@@ -36,9 +37,9 @@ class InProgressPage extends StatelessWidget {
                   repeat: true,
                 ),
                 const SizedBox(height: 20),
-                const TextAnimated(
-                  text: 'Página em construção!',
-                  duration: Duration(seconds: 2),
+                TextAnimated(
+                  text: S.of(context).building,
+                  duration: const Duration(seconds: 2),
                 ),
               ],
             ),

@@ -12,7 +12,7 @@ class AppPage extends StatefulWidget {
 }
 
 class _AppPageState extends State<AppPage> {
-  final String text = 'Olá, seja bem-vindo ao meu portifólio!';
+  final String text = '';
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class _AppPageState extends State<AppPage> {
           left: 0,
           bottom: 0,
           child: Lottie.asset(
-            "lotties/hand.json",
+            "assets/lotties/hand.json",
             height: 300,
             width: 300,
             fit: BoxFit.cover,

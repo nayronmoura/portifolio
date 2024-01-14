@@ -21,6 +21,14 @@
             "type": "dart",
             "args": ["--release, "],
             "flutterMode": "release"
+        },
+        {
+            "name": "l10n ",
+            "request": "attach",
+            "type": "dart",
+            "args":["run, intl_utils:generate"]
         }
+
+
     ]
 }

@@ -14,8 +14,6 @@ class AppModule extends Module {
     r.child('/workinprogress', child: (context) => const InProgressPage());
     r.child('/home', child: (context) => const HomePage(), children: [
       ChildRoute('/justme', child: (context) => const JustMePage()),
-      // r.child('/projects', child: (context) => const InProgressPage()),
-      // r.child('/contact', child: (context) => const InProgressPage()),
     ]);
   }
 }

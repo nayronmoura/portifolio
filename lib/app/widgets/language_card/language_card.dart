@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class LanguageCard extends StatelessWidget {
+class LanguageCard extends StatefulWidget {
   final String imageUrl;
   final String title;
   final String description;
@@ -12,28 +12,37 @@ class LanguageCard extends StatelessWidget {
       required this.description});
 
   @override
+  State<LanguageCard> createState() => _LanguageCardState();
+}
+
+class _LanguageCardState extends State<LanguageCard> {
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      height: 300,
-      decoration: const BoxDecoration(
-        color: Color(0xFF1E1E1E),
-        borderRadius: BorderRadius.all(Radius.circular(10)),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset(imageUrl, height: 100, width: 100),
-          const SizedBox(height: 10),
-          const Text(
-            'Flutter',
-            style: TextStyle(
-              color: Color(0xFFE5E5E5),
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
+    final theme = Theme.of(context);
+    return Card(
+      child: InkWell(
+        onHover: (bool){},
+        child: Container(
+          width: 300,
+          height: 300,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
-        ],
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SvgPicture.asset(widget.imageUrl, height: 100, width: 100),
+              Text(
+                widget.title,
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
