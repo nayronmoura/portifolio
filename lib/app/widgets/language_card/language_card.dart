@@ -17,68 +17,6 @@ class LanguageCard extends StatefulWidget {
 }
 
 class _LanguageCardState extends State<LanguageCard> {
-  bool isHovered = false;
-  @override
-  State<LanguageCard> createState() => _LanguageCardState();
-}
-
-class _LanguageCardState extends State<LanguageCard> {
-  bool isHovered = false;
-  @override
-<<<<<<< Updated upstream
-  Widget build(BuildContext context) {
-    return Card(
-      child: InkWell(
-        onHover: (bool) {
-          setState(() {
-            isHovered = bool;
-          });
-        },
-        child: Container(
-          width: 300,
-          height: 300,
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
-          child: Column(
-            children: [
-              if (isHovered)
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      widget.description,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                )
-              else
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SvgPicture.asset(widget.imageUrl, height: 100, width: 100),
-                    Text(
-                      widget.title,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-=======
-  State<LanguageCard> createState() => _LanguageCardState();
-}
-
-class _LanguageCardState extends State<LanguageCard> {
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
 
   bool isBack = false;
@@ -144,7 +82,6 @@ class _LanguageCardState extends State<LanguageCard> {
             ],
           ),
         ),
->>>>>>> Stashed changes
       ),
     );
   }

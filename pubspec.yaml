@@ -21,17 +21,9 @@ dependencies:
   flutter_modular: ^6.3.2
   flutter_svg: ^2.0.9
   flutter_svg_provider: ^1.0.7
-  intl: ^0.18.0
-  intl_utils: ^2.8.7
-
-<<<<<<< Updated upstream
-=======
-  intl: ^0.18.0
-  intl_utils: ^2.8.7
   flip_card: ^0.7.0
   anchor_scroll_controller: ^0.4.4
 
->>>>>>> Stashed changes
 
 dev_dependencies:
   flutter_test:

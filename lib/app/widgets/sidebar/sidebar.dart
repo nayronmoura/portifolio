@@ -33,10 +33,10 @@ class _SidebarState extends State<Sidebar> {
                   title: const Text('Home'),
                   onTap: widget.onTapHome,
                 ),
-                ListTile(
-                  title: const Text('Sobre'),
-                  onTap: widget.onTapSobre,
-                ),
+                // ListTile(
+                //   title: const Text('Sobre'),
+                //   onTap: widget.onTapSobre,
+                // ),
               ],
             ),
           ),

@@ -5,11 +5,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:portifolio/core/generated/l10n.dart';
 
-<<<<<<< Updated upstream
-=======
-import 'package:portifolio/core/generated/l10n.dart';
->>>>>>> Stashed changes
-
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
 
@@ -17,29 +12,6 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Modular.setInitialRoute("/home");
     return AdaptiveTheme(
-<<<<<<< Updated upstream
-      initial: AdaptiveThemeMode.light,
-      light: ThemeData.light(useMaterial3: true),
-      dark: ThemeData.dark(useMaterial3: true),
-      builder: (theme, darkTheme) => MaterialApp.router(
-        title: "Nayron Moura",
-        theme: theme,
-        darkTheme: darkTheme,
-        localizationsDelegates: const [
-          S.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: const [
-          Locale('pt', 'BR'),
-          Locale('en'),
-        ],
-        debugShowCheckedModeBanner: false,
-        routerConfig: Modular.routerConfig,
-      ),
-    );
-=======
       initial: AdaptiveThemeMode.light,
       light: ThemeData.light(useMaterial3: true),
       dark: ThemeData.dark(useMaterial3: true),
@@ -62,7 +34,6 @@ class AppWidget extends StatelessWidget {
         routerConfig: Modular.routerConfig,
       ),
     );
->>>>>>> Stashed changes
   }
 }
 

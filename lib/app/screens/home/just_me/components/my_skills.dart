@@ -44,23 +44,6 @@ class MySkills extends StatelessWidget {
               imageUrl: 'svg/java.svg',
               title: 'Java',
               description:
-                  'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
-=======
-              imageUrl: 'svg/dart.svg',
-              title: 'Dart',
-              description:
-                  'Dart is a modern, versatile programming language created by Google in 2011. It offers a number of features that make it ideal for developing web, mobile, and desktop applications for multiple platforms.',
-            ),
-            LanguageCard(
-              imageUrl: 'svg/flutter.svg',
-              title: 'Flutter',
-              description:
-                  'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
-            ),
-            LanguageCard(
-              imageUrl: 'svg/java.svg',
-              title: 'Java',
-              description:
                   'Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is a concurrent language and a compiled language. It is a statically typed and reflective language.',
             ),
             LanguageCard(
@@ -74,7 +57,6 @@ class MySkills extends StatelessWidget {
               title: 'Postgres',
               description:
                   'Postgres (also known as PostgreSQL) is an open-source object-relational database management system (RDBMS) that emphasizes extensibility and standards compliance. It is one of the most popular RDBMSs in the world, and is used by millions of users and organizations.',
->>>>>>> Stashed changes
             )
           ])
         ],
