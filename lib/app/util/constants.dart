@@ -5,3 +5,5 @@ bool isTablet(BuildContext context) =>
     MediaQuery.sizeOf(context).width >= 768 &&
     MediaQuery.sizeOf(context).width < 992;
 bool isDesktop(BuildContext context) => MediaQuery.sizeOf(context).width >= 992;
+
+bool isDarkTheme(BuildContext context) => Theme.of(context).brightness == Brightness.dark;

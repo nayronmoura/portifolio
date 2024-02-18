@@ -2,7 +2,10 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 
 class Sidebar extends StatefulWidget {
-  const Sidebar({super.key});
+  final void Function() onTapHome;
+  final void Function() onTapSobre;
+
+  const Sidebar({super.key, required this.onTapHome, required this.onTapSobre});
 
   @override
   State<Sidebar> createState() => _SidebarState();
@@ -28,15 +31,11 @@ class _SidebarState extends State<Sidebar> {
               children: [
                 ListTile(
                   title: const Text('Home'),
-                  onTap: () {},
+                  onTap: widget.onTapHome,
                 ),
                 ListTile(
                   title: const Text('Sobre'),
-                  onTap: () {},
-                ),
-                ListTile(
-                  title: const Text('Contato'),
-                  onTap: () {},
+                  onTap: widget.onTapSobre,
                 ),
               ],
             ),

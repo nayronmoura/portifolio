@@ -35,7 +35,7 @@ class _AppPageState extends State<AppPage> {
                 padding: const EdgeInsets.all(20),
                 child: TextAnimated(
                   onEnd: () {
-                    Modular.to.navigate('/workinprogress');
+                    Modular.to.navigate('/home');
                   },
                   text: S.of(context).welcome,
                 ),
