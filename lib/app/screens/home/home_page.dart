@@ -36,6 +36,8 @@ class _HomePageState extends State<HomePage> {
               ? Sidebar(onTapHome: onTapHome, onTapSobre: onTapSobre)
               : null,
           body: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               !isMobile(context)
                   ? Sidebar(onTapHome: onTapHome, onTapSobre: onTapSobre)
@@ -44,6 +46,8 @@ class _HomePageState extends State<HomePage> {
                 child: SingleChildScrollView(
                   controller: _scrollController,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       AnchorItemWrapper(

@@ -28,19 +28,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  build_runner:
   flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/lotties/in_progress.json
-    - assets/lotties/welcome.json
-    - assets/lotties/hand.json
-    - assets/svg/flutter.svg
-    - assets/svg/dart.svg
-    - assets/svg/java.svg
+    - assets/svg/
+    - assets/lotties/
     
 
 flutter_intl:

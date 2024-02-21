@@ -25,7 +25,8 @@ class _JustMePageState extends State<JustMePage> {
             SizedBox(height: 10),
             AboutMe(),
             SizedBox(height: 50),
-            MySkills()
+            MySkills(),
+            // MyProjects(),
           ],
         ),
       );
