@@ -21,8 +21,6 @@
             "type": "dart",
             "args": ["--release, "],
             "flutterMode": "release"
-<<<<<<< Updated upstream
-=======
         },
         {
             "name": "portifolio (debug)",
@@ -36,15 +34,6 @@
             "request": "attach",
             "type": "dart",
             "args":["run, intl_utils:generate"]
->>>>>>> Stashed changes
         },
-        {
-            "name": "l10n ",
-            "request": "attach",
-            "type": "dart",
-            "args":["run, intl_utils:generate"]
-        }
-
-
     ]
 }

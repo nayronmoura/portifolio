@@ -1,5 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:portifolio/app/widgets/lang_button/lang_button.dart';
 
 class Sidebar extends StatefulWidget {
   final void Function() onTapHome;
@@ -41,15 +42,22 @@ class _SidebarState extends State<Sidebar> {
             ),
           ),
           const Divider(),
-          IconButton(
-              onPressed: () {
-                setState(() {
-                  AdaptiveTheme.of(context).toggleThemeMode();
-                });
-              },
-              icon: AdaptiveTheme.of(context).mode.isDark
-                  ? const Icon(Icons.light_mode)
-                  : const Icon(Icons.dark_mode))
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              IconButton(
+                  onPressed: () {
+                    setState(() {
+                      AdaptiveTheme.of(context).toggleThemeMode();
+                    });
+                  },
+                  icon: AdaptiveTheme.of(context).mode.isDark
+                      ? const Icon(Icons.light_mode)
+                      : const Icon(Icons.dark_mode)),
+              LangButton(),
+            ],
+          )
         ],
       ),
     );

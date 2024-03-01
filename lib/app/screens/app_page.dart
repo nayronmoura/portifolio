@@ -37,7 +37,7 @@ class _AppPageState extends State<AppPage> {
                   onEnd: () {
                     Modular.to.navigate('/home');
                   },
-                  text: S.of(context).welcome,
+                  text: S.of(context).welcomeText,
                 ),
               ),
             ),

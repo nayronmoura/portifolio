@@ -22,9 +22,26 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aboutMe": MessageLookupByLibrary.simpleMessage("Sobre Mim!"),
+        "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
+            "Olá! Meu nome é Nayron Gabriel, tenho atualmente 21 anos e sou um desenvolvedor de software. Atualmente estou cursando o 5º semestre de Sistemas de Informação na Universidade Federal de Pernambuco (UFPE - UAST)."),
         "building":
             MessageLookupByLibrary.simpleMessage("Página em construção!"),
-        "welcome": MessageLookupByLibrary.simpleMessage(
-            "Olá, seja bem-vindo ao meu portifólio!")
+        "flutterCard": MessageLookupByLibrary.simpleMessage("Flutter"),
+        "flutterCardDescription": MessageLookupByLibrary.simpleMessage(
+            "Flutter é um framework multiplataforma de código aberto criado pelo Google. Ele é usado para desenvolver aplicativos para Android, iOS, Linux, Mac, Windows, Google Fuchsia e a web a partir de uma única base de código."),
+        "hiText": MessageLookupByLibrary.simpleMessage("Salve!"),
+        "javaCard": MessageLookupByLibrary.simpleMessage("Java"),
+        "javaCardDescription": MessageLookupByLibrary.simpleMessage(
+            "Java é o famoso pau pra toda obra, é uma linguagem de programação orientada a objetos e uma plataforma de computação criada pela Sun Microsystems em 1995. Ela é uma das linguagens de programação mais usadas no mundo, especialmente para aplicativos de cliente-servidor de web."),
+        "mySkills": MessageLookupByLibrary.simpleMessage("Minhas Habilidades"),
+        "postgresCard": MessageLookupByLibrary.simpleMessage("PostgreSQL"),
+        "postgresCardDescription": MessageLookupByLibrary.simpleMessage(
+            "PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional (SGBDOR), desenvolvido como projeto de código aberto."),
+        "springCard": MessageLookupByLibrary.simpleMessage("Spring Boot"),
+        "springCardDescription": MessageLookupByLibrary.simpleMessage(
+            "Spring Boot é um framework Java para criação de APIs RESTful. Ele é baseado no Spring Framework, mas com recursos que visam facilitar a configuração e o desenvolvimento de aplicações."),
+        "welcomeText": MessageLookupByLibrary.simpleMessage(
+            "Seja bem-vindo ao meu Portifólio!")
       };
 }

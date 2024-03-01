@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:portifolio/app/widgets/language_card/language_card.dart';
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
+import 'package:portifolio/core/generated/l10n.dart';
 
 class MySkills extends StatelessWidget {
   const MySkills({super.key});
@@ -21,42 +22,38 @@ class MySkills extends StatelessWidget {
                 ),
               ),
             ),
-            child: const TextAnimated(
-                text: 'My skills',
-                textScaler: TextScaler.linear(1.5),
+            child: TextAnimated(
+                text: S.of(context).mySkills,
+                textScaler: const TextScaler.linear(1.5),
                 textAlign: TextAlign.start,
-                duration: Duration(seconds: 1),
-                style: TextStyle(
+                duration: const Duration(seconds: 1),
+                style: const TextStyle(
                   fontSize: 20,
                   decorationStyle: TextDecorationStyle.solid,
                   fontWeight: FontWeight.bold,
                 )),
           ),
           const SizedBox(height: 10),
-          const Wrap(children: [
+          Wrap(children: [
             LanguageCard(
               imageUrl: 'assets/svg/flutter.svg',
-              title: 'Flutter',
-              description:
-                  'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
+              title: S.of(context).flutterCard,
+              description: S.of(context).flutterCardDescription,
             ),
             LanguageCard(
               imageUrl: 'assets/svg/java.svg',
-              title: 'Java',
-              description:
-                  'Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. It is a concurrent language and a compiled language. It is a statically typed and reflective language.',
+              title: S.of(context).javaCard,
+              description: S.of(context).javaCardDescription,
             ),
             LanguageCard(
               imageUrl: 'assets/svg/spring.svg',
-              title: 'Spring',
-              description:
-                  'Spring is an open-source application framework and inversion of control container for the Java platform. The Spring Framework provides a comprehensive infrastructure for developing Java applications.',
+              title: S.of(context).springCard,
+              description: S.of(context).springCardDescription,
             ),
             LanguageCard(
               imageUrl: 'assets/svg/postgres.svg',
-              title: 'Postgres',
-              description:
-                  'Postgres (also known as PostgreSQL) is an open-source object-relational database management system (RDBMS) that emphasizes extensibility and standards compliance. It is one of the most popular RDBMSs in the world, and is used by millions of users and organizations.',
+              title: S.of(context).postgresCard,
+              description: S.of(context).postgresCardDescription,
             )
           ])
         ],

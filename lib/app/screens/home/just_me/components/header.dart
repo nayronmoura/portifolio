@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portifolio/app/widgets/text_animated/text_animated.dart';
+import 'package:portifolio/core/generated/l10n.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -17,28 +18,28 @@ class Header extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+      child:  Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: [
             TextAnimated(
-              text: 'Hi there!',
-              textScaler: TextScaler.linear(1.3),
+              text: S.of(context).hiText,
+              textScaler: const TextScaler.linear(1.3),
               textAlign: TextAlign.start,
-              duration: Duration(seconds: 1),
-              style: TextStyle(
+              duration: const Duration(seconds: 1),
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
-              "Welcome to my portfolio!",
-              textScaler: TextScaler.linear(3),
-              style: TextStyle(
+              S.of(context).welcomeText,
+              textScaler: const TextScaler.linear(3),
+              style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
               ),
