@@ -2,7 +2,7 @@
     "@@locale": "pt",
     "building": "Página em construção!",
     "aboutMe": "Sobre Mim!",
-    "aboutMeDescription": "Olá! Meu nome é Nayron Gabriel, tenho atualmente 21 anos e sou um desenvolvedor de software. Atualmente estou cursando o 5º semestre de Sistemas de Informação na Universidade Federal de Pernambuco (UFPE - UAST).",
+    "aboutMeDescription": "Olá, meu nome é Nayron Gabriel, tenho 21 anos e sou um desenvolvedor de software brasileiro apaixonado por tecnologia. Com quase 3 anos de experiência, adquiri sólidas habilidades em Dart, Flutter, Java e Spring Boot. Atualmente estou ampliando meus conhecimentos em desenvolvimento Android nativo. Acredito que a tecnologia tem o poder de transformar o mundo e busco ativamente desafios que me permitam contribuir para esse avanço. Estou sempre disposto a aprender e explorar oportunidades de crescimento. Vamos construir o futuro juntos!",
     "hiText": "Salve!",
     "welcomeText": "Seja bem-vindo ao meu Portifólio!",
     "mySkills": "Minhas Habilidades",
@@ -13,6 +13,12 @@
     "springCard": "Spring Boot",
     "springCardDescription": "Spring Boot é um framework Java para criação de APIs RESTful. Ele é baseado no Spring Framework, mas com recursos que visam facilitar a configuração e o desenvolvimento de aplicações.",
     "postgresCard": "PostgreSQL",
-    "postgresCardDescription": "PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional (SGBDOR), desenvolvido como projeto de código aberto."
-  
+    "postgresCardDescription": "PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional (SGBDOR), desenvolvido como projeto de código aberto.",
+    "dorminhocoTitle": "Dorminhoco",
+    "dorminhocoDescription": "Este aplicativo é perfeito para quem gosta de adormecer ouvindo música. Com o Dorminhoco, você pode definir um timer que desliga automaticamente a música e o Bluetooth do seu celular, para que você possa ter uma boa noite de sono sem se preocupar em ter que desligar o aparelho manualmente.",
+    "cineviewTitle": "CineView",
+    "cineviewDescription": "Cineview é um aplicativo que permite visualizar informações sobre filmes de forma rápida e fácil.",
+    "sideAboutMe": "Sobre Mim",
+    "sideProjects": "Meus Projetos",
+    "sideSkills": "Minhas Habilidades"
 }

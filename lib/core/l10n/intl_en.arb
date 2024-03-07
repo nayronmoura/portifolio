@@ -13,5 +13,12 @@
   "springCard": "Spring Boot",
   "springCardDescription": "Spring is an open-source application framework and inversion of control container for the Java platform. The Spring Framework provides a comprehensive infrastructure for developing Java applications.",
   "postgresCard": "PostgreSQL",
-  "postgresCardDescription": "Postgres (also known as PostgreSQL) is an open-source object-relational database management system (RDBMS) that emphasizes extensibility and standards compliance. It is one of the most popular RDBMSs in the world, and is used by millions of users and organizations."
+  "postgresCardDescription": "Postgres (also known as PostgreSQL) is an open-source object-relational database management system (RDBMS) that emphasizes extensibility and standards compliance. It is one of the most popular RDBMSs in the world, and is used by millions of users and organizations.",
+  "dorminhocoTitle": "Dorminhoco",
+  "dorminhocoDescription": "This app is perfect for people who like to fall asleep listening to music. With Sleep Tight, you can set a timer that automatically turns off the music and Bluetooth on your phone, so you can have a good night's sleep without worrying about having to turn off the device manually.",
+  "cineviewTitle": "CineView",
+  "cineviewDescription": "Cineview is an app that allows you to view movie information quickly and easily. ",
+  "sideAboutMe": "About me",
+  "sideProjects": "Projects",
+  "sideSkills": "My Skills"
 }

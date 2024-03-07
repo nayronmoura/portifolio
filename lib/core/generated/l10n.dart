@@ -189,6 +189,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Dorminhoco`
+  String get dorminhocoTitle {
+    return Intl.message(
+      'Dorminhoco',
+      name: 'dorminhocoTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This app is perfect for people who like to fall asleep listening to music. With Sleep Tight, you can set a timer that automatically turns off the music and Bluetooth on your phone, so you can have a good night's sleep without worrying about having to turn off the device manually.`
+  String get dorminhocoDescription {
+    return Intl.message(
+      'This app is perfect for people who like to fall asleep listening to music. With Sleep Tight, you can set a timer that automatically turns off the music and Bluetooth on your phone, so you can have a good night\'s sleep without worrying about having to turn off the device manually.',
+      name: 'dorminhocoDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `CineView`
+  String get cineviewTitle {
+    return Intl.message(
+      'CineView',
+      name: 'cineviewTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cineview is an app that allows you to view movie information quickly and easily. `
+  String get cineviewDescription {
+    return Intl.message(
+      'Cineview is an app that allows you to view movie information quickly and easily. ',
+      name: 'cineviewDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About me`
+  String get sideAboutMe {
+    return Intl.message(
+      'About me',
+      name: 'sideAboutMe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Projects`
+  String get sideProjects {
+    return Intl.message(
+      'Projects',
+      name: 'sideProjects',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Skills`
+  String get sideSkills {
+    return Intl.message(
+      'My Skills',
+      name: 'sideSkills',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

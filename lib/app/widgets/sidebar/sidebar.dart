@@ -1,12 +1,18 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:portifolio/app/widgets/lang_button/lang_button.dart';
+import 'package:portifolio/core/generated/l10n.dart';
 
 class Sidebar extends StatefulWidget {
   final void Function() onTapHome;
-  final void Function() onTapSobre;
+  final void Function() onTapMySkills;
+  final void Function() onTapMyProjects;
 
-  const Sidebar({super.key, required this.onTapHome, required this.onTapSobre});
+  const Sidebar(
+      {super.key,
+      required this.onTapHome,
+      required this.onTapMySkills,
+      required this.onTapMyProjects});
 
   @override
   State<Sidebar> createState() => _SidebarState();
@@ -15,6 +21,7 @@ class Sidebar extends StatefulWidget {
 class _SidebarState extends State<Sidebar> {
   @override
   Widget build(BuildContext context) {
+    AdaptiveThemeManager? manager = AdaptiveTheme.of(context);
     return Drawer(
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
       shadowColor: Colors.black38,
@@ -31,13 +38,17 @@ class _SidebarState extends State<Sidebar> {
             child: ListView(
               children: [
                 ListTile(
-                  title: const Text('Home'),
+                  title: Text(S.of(context).sideAboutMe),
                   onTap: widget.onTapHome,
                 ),
-                // ListTile(
-                //   title: const Text('Sobre'),
-                //   onTap: widget.onTapSobre,
-                // ),
+                ListTile(
+                  title: Text(S.of(context).sideSkills),
+                  onTap: widget.onTapMySkills,
+                ),
+                ListTile(
+                  title: Text(S.of(context).sideProjects),
+                  onTap: widget.onTapMyProjects,
+                ),
               ],
             ),
           ),
@@ -46,15 +57,22 @@ class _SidebarState extends State<Sidebar> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             mainAxisSize: MainAxisSize.max,
             children: [
-              IconButton(
-                  onPressed: () {
-                    setState(() {
-                      AdaptiveTheme.of(context).toggleThemeMode();
-                    });
-                  },
-                  icon: AdaptiveTheme.of(context).mode.isDark
-                      ? const Icon(Icons.light_mode)
-                      : const Icon(Icons.dark_mode)),
+              ListenableBuilder(
+                  listenable: AdaptiveTheme.of(context).modeChangeNotifier,
+                  builder: (context, _) {
+                    bool isDark = AdaptiveTheme.of(context).mode.isDark;
+                    return IconButton(
+                        onPressed: () {
+                          if (isDark) {
+                            manager.setLight();
+                          } else {
+                            manager.setDark();
+                          }
+                        },
+                        icon: manager.mode.isDark
+                            ? const Icon(Icons.dark_mode)
+                            : const Icon(Icons.light_mode));
+                  }),
               LangButton(),
             ],
           )

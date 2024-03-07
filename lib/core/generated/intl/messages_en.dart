@@ -27,6 +27,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "Hello, my name is Nayron Gabriel, I am 21 years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let\'s build the future together!"),
         "building":
             MessageLookupByLibrary.simpleMessage("Page under construction!"),
+        "cineviewDescription": MessageLookupByLibrary.simpleMessage(
+            "Cineview is an app that allows you to view movie information quickly and easily. "),
+        "cineviewTitle": MessageLookupByLibrary.simpleMessage("CineView"),
+        "dorminhocoDescription": MessageLookupByLibrary.simpleMessage(
+            "This app is perfect for people who like to fall asleep listening to music. With Sleep Tight, you can set a timer that automatically turns off the music and Bluetooth on your phone, so you can have a good night\'s sleep without worrying about having to turn off the device manually."),
+        "dorminhocoTitle": MessageLookupByLibrary.simpleMessage("Dorminhoco"),
         "flutterCard": MessageLookupByLibrary.simpleMessage("Flutter"),
         "flutterCardDescription": MessageLookupByLibrary.simpleMessage(
             "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."),
@@ -38,6 +44,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "postgresCard": MessageLookupByLibrary.simpleMessage("PostgreSQL"),
         "postgresCardDescription": MessageLookupByLibrary.simpleMessage(
             "Postgres (also known as PostgreSQL) is an open-source object-relational database management system (RDBMS) that emphasizes extensibility and standards compliance. It is one of the most popular RDBMSs in the world, and is used by millions of users and organizations."),
+        "sideAboutMe": MessageLookupByLibrary.simpleMessage("About me"),
+        "sideProjects": MessageLookupByLibrary.simpleMessage("Projects"),
+        "sideSkills": MessageLookupByLibrary.simpleMessage("My Skills"),
         "springCard": MessageLookupByLibrary.simpleMessage("Spring Boot"),
         "springCardDescription": MessageLookupByLibrary.simpleMessage(
             "Spring is an open-source application framework and inversion of control container for the Java platform. The Spring Framework provides a comprehensive infrastructure for developing Java applications."),
