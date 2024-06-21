@@ -1,3 +1,4 @@
 {
-    "github-actions.workflows.pinned.workflows": []
+  "github-actions.workflows.pinned.workflows": [],
+  "dart.flutterSdkPath": ".fvm/versions/3.22.1"
 }
