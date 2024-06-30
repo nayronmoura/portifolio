@@ -20,11 +20,13 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(years) =>
+      "Hello, my name is Nayron Gabriel, I am ${years} years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let\'s build the future together!";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutMe": MessageLookupByLibrary.simpleMessage("About me"),
-        "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
-            "Hello, my name is Nayron Gabriel, I am 21 years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let\'s build the future together!"),
+        "aboutMeDescription": m0,
         "building":
             MessageLookupByLibrary.simpleMessage("Page under construction!"),
         "cineviewDescription": MessageLookupByLibrary.simpleMessage(

@@ -29,7 +29,7 @@ class AboutMe extends StatelessWidget {
               ),
             ),
             Text(
-              S.of(context).aboutMeDescription,
+              S.of(context).aboutMeDescription(age),
               textScaler: const TextScaler.linear(1.3),
               textAlign: TextAlign.center,
               style: const TextStyle(
@@ -40,5 +40,10 @@ class AboutMe extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  String get age {
+    final now = DateTime.now();
+    return (now.year - 2003).toString();
   }
 }

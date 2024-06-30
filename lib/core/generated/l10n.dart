@@ -70,13 +70,13 @@ class S {
     );
   }
 
-  /// `Hello, my name is Nayron Gabriel, I am 21 years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let's build the future together!`
-  String get aboutMeDescription {
+  /// `Hello, my name is Nayron Gabriel, I am {years} years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let's build the future together!`
+  String aboutMeDescription(Object years) {
     return Intl.message(
-      'Hello, my name is Nayron Gabriel, I am 21 years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let\'s build the future together!',
+      'Hello, my name is Nayron Gabriel, I am $years years old, and I am a Brazilian software developer with a passion for technology. With almost 3 years of experience, I have acquired solid skills in Dart, Flutter, Java, and Spring Boot. Currently, I am expanding my knowledge in native Android development. I believe technology has the power to transform the world, and I actively seek challenges that allow me to contribute to this advancement. I am always eager to learn and explore opportunities for growth. Let\'s build the future together!',
       name: 'aboutMeDescription',
       desc: '',
-      args: [],
+      args: [years],
     );
   }
 

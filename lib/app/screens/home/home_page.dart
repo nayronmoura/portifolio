@@ -24,15 +24,20 @@ class _HomePageState extends State<HomePage> {
 
   void onTapHome() {
     _scrollController.scrollToIndex(index: 0);
+    if (drawerIsOpen) Navigator.of(context).pop();
   }
 
   void onTapMySkills() {
     _scrollController.scrollToIndex(index: 1);
+    if (drawerIsOpen) Navigator.of(context).pop();
   }
 
   void onTapMyProjects() {
     _scrollController.scrollToIndex(index: 2);
+    if (drawerIsOpen) Navigator.of(context).pop();
   }
+
+  bool get drawerIsOpen => DrawerController.of(context).isDrawerOpen;
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +62,7 @@ class _HomePageState extends State<HomePage> {
                   : Container(),
               Expanded(
                 child: SingleChildScrollView(
+                  physics: const ClampingScrollPhysics(),
                   controller: _scrollController,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
