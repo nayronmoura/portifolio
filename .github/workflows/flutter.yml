@@ -1,4 +1,4 @@
-name: Flutter Build and Deploy
+name: Deploy to VPS
 
 on:
   workflow_dispatch:
@@ -7,11 +7,11 @@ on:
       - master
 
 jobs:
-  build:
+  build_deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
@@ -30,15 +30,11 @@ jobs:
         name: web-release
         path: build/web
     
-    - name: Deploy
-      run: |
-          cd build/web
-          git init
-          git config --global user.email nayronmoura@gmail.com
-          git config --global user.name nayronmoura
-          git status
-          git remote add origin https://${{secrets.token}}@github.com/nayronmoura/nayronmoura.github.io.git
-          git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
-          git push origin gh-pages -f
+    - name: copy file via ssh password
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "build/web"
+          target: "/portifolio"
